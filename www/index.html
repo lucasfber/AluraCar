@@ -40,12 +40,18 @@
       <ion-nav-view>
         <ion-nav-bar class="bar-positive">
           <!-- Barra de navegacao da aplicacao/ conteudo se encontra em "nav-bar-title" -->
+           <ion-nav-back-button class="button-clear">
+              Voltar
+           </ion-nav-back-button>
         </ion-nav-bar>
         <!-- template ficará aqui -->
       </ion-nav-view>
 
       <ion-footer-bar align-title="center" class="bar-stable">
-		    <h1 class="title">Av Mister Hull - Fortaleza - CE</h1>
+		    <h1 class="title">{{endereco}}</h1>
+        <div class="buttons">
+          <button class="button">Voltar</button>  
+        </div>
 	    </ion-footer-bar>
     </ion-pane>
   </body>
